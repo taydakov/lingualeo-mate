@@ -9,6 +9,13 @@
 		"default_icon": "icon.png"
 	},
 
+	"content_scripts": [
+		{
+			"matches": ["https://lingualeo.com/ru/training/*"],
+			"js": ["jquery.js", "injection.js"]
+		}
+	],
+
 	"permissions": [
 		"https://ajax.googleapis.com/"
 	]
